@@ -1,0 +1,91 @@
+{
+  "STORE_NAME": "Mania de Churrasco",
+   "USE_COMMAND":"true",
+   "USE_VS_DOCK": "true",
+  "THEME": "mania-de-churrasco-comandas",
+  "TIMEOUT_APLICATION": "60000",
+  "LAST_IMG_TIMEOUT": "12000",
+  "MOCK_TEF": "false",
+  "ADMIN_PASSWORD": "123456",
+  "INPUT_JUST_TYPING":"true",
+  "NAME_PRINTER": "epson-t88",
+  "ORDER_START_NUMBER": "",
+  "NO_FISCAL_ALERT_MESSAGE": "Dirija-se até um de nossos funcionários e apresente o cupom impresso.",
+  "PAYMENT": {
+    "PAYMENT_METHODS": [
+      { "name": "credit", "desc": "Crédito", "tef": "credit" },
+      { "name": "debit", "desc": "Débito", "tef": "debit" },
+      { "name": "voucher", "desc": "Voucher", "tef": "debit" }
+    ],
+    "PAYMENT_QUESTIONS": [
+      {
+        "title": "Informe seu CPF",
+        "type": "cpf",
+        "attribute": "document",
+        "moment": ["start", "end"],
+        "extraCheckbox": [{
+          "title": "Adicionar CPF na nota fiscal",
+          "attribute": "useDocumentOnInvoice",
+          "value": true
+        }]
+      },
+      {
+        "title": "Informe seu nome",
+        "type": "text",
+        "attribute": "name",
+        "moment": ["start", "end"]
+      }
+    ]
+  },
+  "PARTNER": {
+      "NAME":"ecletica-command",
+      "INTEGRATION_URL":"http://IP_DISPOSITIVOS_MOVEIS:8080",
+      "INTEGRATION_CODE":"",
+      "INTEGRATION_KEY":"1c4c6175ef5d9112d0726be98b5c1b61da8f7504",
+      "ESTABLISHMENT_CODE":"",
+      "BRAND_CARD_LIST" :{
+            "00045":"4200",
+            "10022":"1021",
+            "10019":"6",
+            "10242":"6",
+            "10021":"1021",
+            "00004":"5",
+            "10141":"23",
+            "10140":"23",
+            "00000":"4201",
+            "00003":"10",
+            "00031":"21",
+            "20032":"20",
+            "10005":"1005",
+            "10173":"1005",
+            "10174":"1006",
+            "00012":"22",
+            "20037":"22",
+            "20001":"4",
+            "10189":"3",
+            "00002":"3",
+            "10006":"11",
+            "10071":"11",
+            "10073":"11",
+            "00008":"4",
+            "10030":"8",
+            "10003":"8",
+            "10031":"8",
+            "10028":"1028",
+            "10001":"1024",
+            "10026":"1024",
+            "10024":"1024",
+            "10011":"12",
+            "10176":"13",
+            "10177":"13",
+            "10008":"13",
+            "00001":"1",
+            "10188":"1",
+            "20002":"2",
+            "10002":"23",
+            "10083":"9",
+            "10070":"9",
+            "10047":"9"    
+        }
+  }
+}
